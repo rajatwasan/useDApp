@@ -1,5 +1,14 @@
 # @usedapp/core
 
+## 1.0.1
+
+### Patch Changes
+
+- e978fd9: 🥌 Add static calls
+- 3a108ad: 💤 Add zkSync to known chains
+- 5067120: 🐯 Solve getting lowercase account number from metamask after changing account
+- a40a680: Add Boba network
+
 ## 1.0.0
 
 ### Major Changes
