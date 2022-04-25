@@ -2,7 +2,7 @@ import { Web3Provider } from '@ethersproject/providers'
 import detectEthereumProvider from '@metamask/detect-provider'
 
 export async function getInjectedProvider(pollingInterval: number) {
-  const injectedProvider: any = await detectEthereumProvider()
+  const injectedProvider: any = await detectEthereumProvider({ mustBeMetaMask: true })
   if (!injectedProvider) {
     return undefined
   }
