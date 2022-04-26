@@ -91,7 +91,7 @@ export function NetworkProvider({ children, providerOverride }: NetworkProviderP
     setTimeout(async () => {
       try {
         if (shouldConnectMetamask && autoConnect && !providerOverride) {
-          await detectEthereumProvider()
+          await detectEthereumProvider({ mustBeMetaMask: true })
 
           // If window.ethereum._state.accounts is non null but has no items,
           // it probably means that the user has disconnected Metamask manually.
